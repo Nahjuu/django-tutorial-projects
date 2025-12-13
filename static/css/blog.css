@@ -1,0 +1,203 @@
+.page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 48pt;
+    text-decoration: none;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.page-header h1 a:hover {
+    transform: scale(1.02);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #8a8a8a;
+    font-size: 0.9em;
+    background: #f8f9fa;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+}
+
+.save {
+    float: right;
+    font-size: 1.2em;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.post-form textarea:focus,
+.post-form input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.top-menu:hover {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.post {
+    background: white;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #333;
+    text-decoration: none;
+    font-size: 28pt;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.post h2 a:hover {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+    margin-left: 15px;
+}
+
+.post p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post p:last-child {
+    margin-bottom: 0;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #667eea;
+    background: none;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    color: #ffffff;
+    background-color: #667eea;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Post list specific styles */
+main.container {
+    max-width: 900px;
+}
+
+.post .date {
+    margin-bottom: 10px;
+}
+
+.post .actions {
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 30px 15px;
+    }
+    
+    .page-header h1,
+    .page-header h1 a,
+    .page-header h1 a:visited,
+    .page-header h1 a:active {
+        font-size: 32pt;
+    }
+    
+    .post {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .post h2 a,
+    .post h2 a:visited {
+        font-size: 22pt;
+    }
+}
+
+/* Adding some spacing to the main content */
+main.container {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Styling for the paragraph mentioned in post-detail */
+.post p:not(:first-of-type) {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    margin: 20px 0;
+}
